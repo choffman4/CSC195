@@ -22,5 +22,23 @@ int main()
     std::cout << "\nsizeof(V1) = " << sizeof(iVal1);
     std::cout << "\nsizeof(V2) = " << sizeof(shVal2);
 
+    int* ptr = NULL;
+    ptr = &iVal1; // reference -- accessing address @ memory location, not the value @ memory location
+    std::cout << "\nValue of ptr = " << ptr;
+    // std::cout << "\nThe value that ptr points to = " << *(ptr - 6); // dereferencing 6 bytes away from pointer
+
+    std::cout << "\nThe value that ptr points to = " << *(ptr - 3); // dereferencing 3 bytes away from pointer in between memory
+
+    // *ptr = 5; // dereferenced -- not accessing address @ memory location, accessing the value @ memory location
+
+
+    std::cout << "\nValue of iVal1 = " << iVal1;
+
+
+    // *(ptr + 11) = 12345; // throws exception
+
+
     std::cout << "\n\n *** End of Prog *** ";
+
+
 }

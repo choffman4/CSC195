@@ -45,10 +45,9 @@ int main()
 	cout << name << " worked " << totalHours << " hours at $" << wage << " an hour." << "\n";
 
 	double grossIncome = (totalHours * wage);
-	float netIncome = (grossIncome - (TAX* grossIncome));
+	float netIncome = (grossIncome - (TAX * grossIncome));
 
 	cout << "grossIncome:" << grossIncome << "\n";
 	cout << "netIncome: " << netIncome << endl;
 	
-
 }
